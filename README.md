@@ -36,9 +36,11 @@ You can write and read files while the content is **encrypted**. It means, that 
 
 You will continue using the same api as before. The only thing you need to do is to configure the Simple Storage library before the you want to create/read encrypted data.
 
-### Security on Java
-// set encryption
+### Security on Java (set encryption)
+
 String IVX = "abcdefghijklmnop"; // 16 lenght - not secret
+
 String SECRET_KEY = "secret1234567890"; // 16 lenght - secret
+
 byte[] SALT = "0000111100001111".getBytes(); // random 16 bytes array
 
